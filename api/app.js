@@ -2,6 +2,7 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import postRoute from "./routes/post.route.js";
 import authRoute from "./routes/auth.route.js";
+import "dotenv/config";
 
 const app = express();
 app.use(express.json());
