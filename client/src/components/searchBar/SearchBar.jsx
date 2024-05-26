@@ -3,7 +3,7 @@ import "./searchBar.scss";
 
 const types = ["buy", "rent"];
 
-function Search() {
+function SearchBar() {
   const [query, setQuery] = useState({
     type: "buy",
     location: "",
@@ -37,7 +37,6 @@ function Search() {
           max={10000000}
           placeholder="Min Price"
         />
-
         <input
           type="number"
           name="maxPrice"
@@ -46,11 +45,11 @@ function Search() {
           placeholder="Max Price"
         />
         <button>
-          <img src="/search.png" alt="search icon" />
+          <img src="/search.png" alt="" />
         </button>
       </form>
     </div>
   );
 }
 
-export default Search;
+export default SearchBar;

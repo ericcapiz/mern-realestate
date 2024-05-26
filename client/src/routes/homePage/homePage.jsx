@@ -1,7 +1,7 @@
-import Search from "../../components/search/Search";
-import "./home.scss";
+import SearchBar from "../../components/searchBar/SearchBar";
+import "./homePage.scss";
 
-const Home = () => {
+function HomePage() {
   return (
     <div className="homePage">
       <div className="textContainer">
@@ -13,7 +13,7 @@ const Home = () => {
             facilis id pariatur fugit quos laudantium temporibus dolor ea
             repellat provident impedit!
           </p>
-          <Search />
+          <SearchBar />
           <div className="boxes">
             <div className="box">
               <h1>16+</h1>
@@ -35,6 +35,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Home;
+export default HomePage;
